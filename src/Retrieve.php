@@ -33,7 +33,7 @@ class Retrieve
             file_get_contents(static::SAT_ENDPOINT)
         );
 
-        foreach($xml->xpath('//xsl:include') as $node) {
+        foreach ($xml->xpath('//xsl:include') as $node) {
             $files[] = reset($node['href']);
         }
 
