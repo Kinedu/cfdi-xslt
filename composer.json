@@ -1,7 +1,7 @@
 {
-    "name": "kinedu/cfdi-utils",
+    "name": "kinedu/cfdi-xslt",
     "description": "",
-    "homepage": "https://github.com/Kinedu/cfdi-utils",
+    "homepage": "https://github.com/Kinedu/cfdi-xslt",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Kinedu\\CfdiUtils\\": "src"
+            "Kinedu\\CfdiXslt\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kinedu\\CfdiUtils\\Tests\\": "tests"
+            "Kinedu\\CfdiXslt\\Tests\\": "tests"
         }
     },
     "prefer-stable": true
