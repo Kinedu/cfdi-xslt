@@ -1,6 +1,6 @@
 {
     "name": "kinedu/cfdi-xslt",
-    "description": "",
+    "description": "Librería para descargar los XSLT de la Cadena Original del Servicio de Administración Tributaria (SAT)",
     "homepage": "https://github.com/Kinedu/cfdi-xslt",
     "type": "library",
     "license": "MIT",
