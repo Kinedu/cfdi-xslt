@@ -6,12 +6,14 @@
 [![Total Downloads](https://poser.pugx.org/kinedu/cfdi-xslt/downloads?format=flat-square)](https://packagist.org/packages/kinedu/cfdi-xslt)
 [![License](https://img.shields.io/github/license/kinedu/cfdi-xml.svg?style=flat-square)](https://packagist.org/packages/kinedu/cfdi-xslt)
 
-## Installation
+## Instalación
+
+Instalar el paquete mediante [Composer](https://getcomposer.org/).
 
 ```shell
 composer require kinedu/cfdi-xslt
 ```
 
-## License
+## Licencia
 
-CFDI XSLT is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+CFDI XSLT esta bajo la Licencia MIT, si quieres saber más al respecto puedes ver el archivo de [Licencia](LICENSE) que se encuentra en este mismo repositorio.
