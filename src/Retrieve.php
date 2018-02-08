@@ -12,6 +12,8 @@
 namespace Kinedu\CfdiXslt;
 
 use SimpleXMLElement;
+use DOMDocument;
+use DOMXpath;
 
 class Retrieve
 {
@@ -45,13 +47,26 @@ class Retrieve
      *
      * @return bool
      */
-    public function changeNodeReference(string $directory) : bools
+    public function changeNodeReference(string $directory) : bool
     {
         $file = $directory.$this->getFileName(static::SAT_ENDPOINT);
 
-        $xml = file_get_contents($file);
+        $dom = new DOMDocument();
+        $dom->load($file);
 
-        return true;
+        $xpath = new DOMXpath($dom);
+        $query = '//xsl:include';
+
+        foreach ($xpath->query($query) as $node) {
+            $href = $node->getAttribute('href');
+
+            $node->setAttribute(
+                'href',
+                "{$directory}".$this->getFileName($href)
+            );
+        }
+
+        return $dom->save($file);
     }
 
     /**
@@ -67,6 +82,8 @@ class Retrieve
 
             file_put_contents("{$directory}{$fileName}", $file);
         }
+
+        $this->changeNodeReference($directory);
 
         return true;
     }

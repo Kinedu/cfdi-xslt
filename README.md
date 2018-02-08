@@ -14,6 +14,17 @@ Instalar el paquete mediante [Composer](https://getcomposer.org/).
 composer require kinedu/cfdi-xslt
 ```
 
+## Uso
+
+```php
+use Kinedu\CfdiXslt\Retrieve;
+
+$myFolder = './xslt/';
+
+$retrieve = new Retrieve();
+$retrieve->download($myFolder);
+```
+
 ## Licencia
 
 CFDI XSLT esta bajo la Licencia MIT, si quieres saber más al respecto puedes ver el archivo de [Licencia](LICENSE) que se encuentra en este mismo repositorio.
