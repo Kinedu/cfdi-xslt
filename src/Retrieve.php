@@ -62,7 +62,7 @@ class Retrieve
 
             $node->setAttribute(
                 'href',
-                "{$directory}".$this->getFileName($href)
+                $this->getFileName($href)
             );
         }
 
