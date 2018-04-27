@@ -27,7 +27,7 @@ class Retrieve
     /**
      * @return array
      */
-    protected function getIncludeFiles() : array
+    protected function getIncludeFiles(): array
     {
         $files[] = static::SAT_ENDPOINT;
 
@@ -47,7 +47,7 @@ class Retrieve
      *
      * @return bool
      */
-    public function changeNodeReference(string $directory) : bool
+    public function changeNodeReference(string $directory): bool
     {
         $file = $directory.$this->getFileName(static::SAT_ENDPOINT);
 
@@ -74,7 +74,7 @@ class Retrieve
      *
      * @return bool
      */
-    public function download(string $directory) : bool
+    public function download(string $directory): bool
     {
         foreach ($this->getIncludeFiles() as $url) {
             $file = file_get_contents($url);
@@ -93,7 +93,7 @@ class Retrieve
      *
      * @return string
      */
-    protected function getFileName(string $file) : string
+    protected function getFileName(string $file): string
     {
         return basename($file);
     }
