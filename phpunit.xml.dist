@@ -7,7 +7,7 @@
          convertWarningsToExceptions="true"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Cfdi Utils Test">
+        <testsuite name="CFDI XSLT Test">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
